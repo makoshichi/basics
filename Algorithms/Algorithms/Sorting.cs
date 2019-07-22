@@ -10,7 +10,7 @@ namespace Algorithms
 
     public class Sorting
     {
-        private void Exchange(int[] array, int i, int j)
+        private void Swap(int[] array, int i, int j)
         {
             int lowest = array[j];
             array[j] = array[i];
@@ -24,12 +24,12 @@ namespace Algorithms
                 for (int j = 0; j < array.Length; j++)
                 {
                     if (array[i] < array[j])
-                        Exchange(array, i, j);
+                        Swap(array, i, j);
                 }
             }
         }
 
-        public void SelectionSort(int[] array) //O(N)
+        public void SelectionSort(int[] array) //O(N²); less comparisons (comparison time is non-trivial)
         {
             int FindSmallestIndex(int[] data, int start)
             {
@@ -46,9 +46,31 @@ namespace Algorithms
             {
                 int k = FindSmallestIndex(array, i);
                 if (k != i)
-                    Exchange(array, i, k);
+                    Swap(array, i, k);
             }
         }
+
+        public void MergeSort(int[] array, int p, int r)
+        {
+            int q = (int)Math.Floor((double)((p + r) / 2));
+
+            if (q == p)
+                return;
+
+            if (array[q] < array[p]) {
+                Swap(array, q, p);
+                r = p;
+            }
+            else
+            {
+                Swap(array, p, q);
+                p = q;
+            }
+            MergeSort(array, q, r);
+            MergeSort(array, p, q + 1);
+        }
+
+        //public void QuickSort
     }
 
 }

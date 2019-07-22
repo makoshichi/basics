@@ -1,0 +1,7 @@
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+D:\makoshichi\code\git\basics\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
